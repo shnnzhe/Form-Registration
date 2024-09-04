@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/Styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form Faculty of Vocational UB</header>
+      <form action="process_registration.php" method="POST" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Enter full name" required />
+        </div>
+        <div class="input-box">
+          <label>NIM</label>
+          <input type="text" name="nim" placeholder="Enter NIM" required />
+        </div>
+        <div class="input-box">
+          <label>Program Study</label>
+          <input type="text" name="program_study" placeholder="Enter Program Study" required />
+        </div>
+        <div class="input-box">
+          <label>Religion</label>
+          <input type="text" name="religion" placeholder="Enter Religion" required />
+        </div>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter email @student.ub.ac.id" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" name="phone" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" name="birth_date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" value="male" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value="female" />
+              <label for="check-female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" name="address" placeholder="Enter street address" required />
+
+          <div class="column">
+            <div class="select-box">
+              <select name="region" required>
+                <option hidden>Region</option>
+                <option value="Jawa">Jawa</option>
+                <option value="Sumatra">Sumatra</option>
+                <option value="Sulawesi">Sulawesi</option>
+                <option value="Kalimantan">Kalimantan</option>
+                <option value="Papua">Papua</option>
+              </select>
+            </div>
+            <input type="text" name="city" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" name="province" placeholder="Enter your province" required />
+            <input type="number" name="postal_code" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
